@@ -10,6 +10,8 @@
 # str string 字符
 # 合法标识符（变量名方法名）：必须字母或_开头，剩下的可以是字母数字，下划线，大小写敏感，不可用关键字（python自带单词，比如def，if，pass）做标识符
 # ctrl+alt+l 格式化代码
+# ctrl+K    commit 代码
+# ctrl + shift + K     push 代码
 
 # 声明一个int_demo方法 没有参数
 def int_demo():
