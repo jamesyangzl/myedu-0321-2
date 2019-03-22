@@ -28,8 +28,7 @@ def deng(a):
     print(a)
 
 if __name__ == '__main__':
-    a = 10
-
+    # a = 10
     # b = 3
     # c = 10
 
