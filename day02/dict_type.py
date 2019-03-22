@@ -1,4 +1,5 @@
 
+import json
 # 声明一个全量 dict 变量 （字典）
 
 adict = {"name":"ysl","pwd":"123456"}
@@ -7,5 +8,13 @@ adict = {"name":"ysl","pwd":"123456"}
 adictStr = '{"name":"ysl","pwd":"123456"}'
 
 if __name__ == '__main__':
-    adict.pop('name')
-    print(adict)
+    # print(adict)
+    # adict.pop('name')
+    # print(adict['name'])
+    # print(adict)
+    # str类型和dict类型之间的转换
+    print(type(adictStr))
+    dict_str = json.loads(adictStr)
+    print(type(dict_str))
+    print(dict_str['name'])
+
