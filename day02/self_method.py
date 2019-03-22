@@ -72,10 +72,23 @@ def elif_demo():
     else:
         print('else分支')
 
-if __name__ == '__main__':
-    # 将1到50的奇数加起来
+# 将1到50的奇数加起来
+def jishu():
     num=0
     for i in range(1,51):
         if i%2 != 0:
             num=num+i
     print(num)
+
+# 周末作业:2个int参数之间的偶数加起来
+def zhoumozuoye():
+    a=4
+    b=10
+    num=0
+    for i in range(a+1,b):
+        if i%2 ==0:
+            num=num+i
+    print(num)
+
+if __name__ == '__main__':
+    zhoumozuoye()
