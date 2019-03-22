@@ -27,6 +27,15 @@ def str_demo():
     print(astr)
     print(type(astr))
 
+    # 不写
+    print('--------------')
+    astr = 1
+    # 打印 astr 的值
+    print(astr)
+    # 打印 astr 的 类型; type(astr): 获取astr的类型
+    print(type(astr))
+
+
 def str_demo1():
     a= 'hello'
     b= 'world'
@@ -71,4 +80,6 @@ if __name__ == '__main__':
     # 调用add方法 传入1,2，得到返回值，赋值“=”给result变量
     # result = sub(3, 4)
     # print(result)
+    # 默认参数传参
+    # add(2,1)
     pass
