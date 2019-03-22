@@ -60,5 +60,22 @@ def if_demo2():
     else:
         print(b)
 
+# 三个条件判断,不符合走else分支
+def elif_demo():
+    a=4
+    if a==2:
+        print('第1个if')
+    elif a==3:
+        print('第2个if')
+    elif a==1:
+        print('第3个if')
+    else:
+        print('else分支')
+
 if __name__ == '__main__':
-    if_demo0()
+    # 将1到50的奇数加起来
+    num=0
+    for i in range(1,51):
+        if i%2 != 0:
+            num=num+i
+    print(num)
