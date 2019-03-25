@@ -8,10 +8,12 @@ def assert_false():     #false会响应直接报错
 def assert_demo():      #a里面没有7所以报错
     a="123456"
     assert '7' in a
+    print('----')
 
 def assert_demo2():     #a里面有6所以不报错
     a="123456"
     assert '6' in a
+    print('----')
 
 def assert_demo3():     #报错
     a="123456"
@@ -34,8 +36,17 @@ def assert_demo5():     #try之内的正确就不会输出except内的内容
         print('a里面没有7')
     print('-------')
 
+def assert_demo6():     #不管是否出错,都会执行finally
+    a="123456"
+    try:
+        assert '6' not in a
+    # except:
+    #     print('a里面没有7')
+    finally:
+        print('最后----')
+
 if __name__ == '__main__':
-    assert_demo4()
+    assert_demo6()
 
 
 
