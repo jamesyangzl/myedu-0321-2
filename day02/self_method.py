@@ -90,5 +90,28 @@ def zhoumozuoye():
             num=num+i
     print(num)
 
+# while语句
+def while_demo():
+    a=0
+    while a<5:
+        print(a)
+        a+=1
+
+# 和for语句对比
+def while_mydemo():
+    a=0
+    for a in range(0,5):
+        print(a)
+        a+=1
+
 if __name__ == '__main__':
-    zhoumozuoye()
+    while_demo()
+    pass
+
+
+
+
+
+
+
+
