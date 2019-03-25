@@ -16,7 +16,7 @@ def open_demo():
     text_io = open('../test.text','a+')
     text_io.write("XXXXX")
 
-def openr_demo():
+def open_demo2():
     text_io = open('../test.text','r')
     readline = text_io.readline(4)
     print(readline)
@@ -24,4 +24,4 @@ def openr_demo():
     print(readlines)
 
 if __name__ == '__main__':
-    open_demo()
+    open_demo2()
