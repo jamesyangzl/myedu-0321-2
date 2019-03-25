@@ -8,13 +8,20 @@ def os_demo():
     abspath1 = os.path.abspath('../..')     #../..返回上级的上级目录
     print(abspath1)
 
-if __name__ == '__main__':
+def open_demo():
     # 相对路径  ../test.text
     # 绝对路径  C:\Users\Administrator\PycharmProjects\myedu\day03\test.text
     # open('test.text','w+')
-    text_io = open('../test.text','w+')
+    # text_io = open('../test.text','w+')
+    text_io = open('../test.text','a+')
     text_io.write("XXXXX")
-    pass
 
+def openr_demo():
+    text_io = open('../test.text','r')
+    readline = text_io.readline(4)
+    print(readline)
+    readlines = text_io.readlines()
+    print(readlines)
 
-
+if __name__ == '__main__':
+    open_demo()
