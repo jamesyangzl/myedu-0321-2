@@ -38,5 +38,49 @@ def for_list():
     for i in alist:   #非常简单的写法,效果一模一样,固定语法,没有为什么
         print(i)
 
+#assert
+def assert_demo():
+    assert 4>2
+    #assert 1>2
+    astr='你好世界'
+    assert '你'in astr
+    #assert '我'in astr
+    assert '你'not in astr
+
+#if,else,elif
+def if_demo():
+    a = 12
+    b = 12
+    if a>b:
+        print('a大于b')
+    elif a<b:
+        print('a小于b')
+    else:
+        print('a等于b')
+
+#while
+def while_demo():
+    a=0
+    while a<5:
+        print(a)
+        # a+=1
+        a+=2
+#while 不如for循环,一般就不用了
+
+
+def try_demo():
+    astr = 'gsdfhser'
+    try:
+        assert '你' in astr
+    except:
+        print('报错啦,断言没通过')
+    print('-------')
+#try用来处理异常,不会一出现异常就停止
+
 if __name__ == '__main__':
-    for_list()
+    try_demo()
+
+
+
+
+
