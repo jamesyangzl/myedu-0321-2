@@ -38,16 +38,18 @@ def str_demo():
 
 def str_demo1():
     a= 'hello'
-    b= 'world'
-    return a+b
+    b= ' world'
+    print(a+b)
 
 def str_demo2():
     a= 'hello'
     b= 250
-    s = str(b)
-    print(s)
-    print(type(s))
-    print(a+s)
+    print(a+str(b))
+    print('a是:%s;b是:%s' %(a,b))
+    # s = str(b)
+    # print(s)
+    # print(type(s))
+    # print(a+s)
 
 # 声明一个float_demo方法 没有参数
 def float_demo():
@@ -71,7 +73,7 @@ def sub(aint, bint):
     return aint - bint
 
 if __name__ == '__main__':
-    print(str_demo2())
+    str_demo2()
     # print(str_demo1())
     # float_demo()
     # str_demo()
